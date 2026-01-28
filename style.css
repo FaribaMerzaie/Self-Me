@@ -1,18 +1,23 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   box-sizing: border-box;
 }
-nav {
-  position: sticky;
-  top: 0;
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: aquamarine;
   padding: 15px 0;
   text-align: center;
   z-index: 1000;
+  width: 100%;
 }
-nav a {
+.nav a {
   color: white;
   text-decoration: none;
   margin: 0 10px;
@@ -20,7 +25,7 @@ nav a {
   border: 1px solid white;
   border-radius: 8px;
 }
-nav a :hover {
+.nav a:hover {
   background-color: #77f1c9;
   color: black;
 }
@@ -59,7 +64,9 @@ nav a :hover {
 
   box-shadow: 0 8px 20px;
 
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   grid-template-rows: repeat(3, 1fr);
 }
 .section img:hover {
@@ -95,7 +102,9 @@ nav a :hover {
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53), box-shadow 0.5s;
+  transition:
+    cubic-bezier(0.55, 0.085, 0.68, 0.53),
+    box-shadow 0.5s;
 }
 .page3:hover {
   background-color: rgb(17, 165, 165);
